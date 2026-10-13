@@ -1,0 +1,11 @@
+h1 {
+  background-color: #b95050;
+  font-size: 3rem;
+}
+
+.baum {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #a214ca;
+}
