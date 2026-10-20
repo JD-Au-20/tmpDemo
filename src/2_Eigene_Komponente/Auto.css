@@ -1,0 +1,17 @@
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.card {
+  border: 1px solid #07da15;
+  padding: 3rem;
+}
+
+.auto-container {
+  gap: 75px;
+}
+
+h2 {
+    color: #1301b5;
+}

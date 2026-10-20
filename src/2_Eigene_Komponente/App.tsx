@@ -1,8 +1,8 @@
 import './App.css'
-import Baum from './Baum.tsx'
+import Auto from './Auto.tsx'
 
 function App() {
-  return <Baum />
+  return <Auto />
 }
 
 export default App
