@@ -1,8 +1,10 @@
-import './App.css'
-import Auto from './Auto.tsx'
+import styles from './App.module.css'
+import Card from './Card.tsx'
 
-function App() {
-  return <Auto />
+export default function App() {
+  return (
+    <div className={styles['card-container']}>
+      <Card />
+    </div>
+  )
 }
-
-export default App
