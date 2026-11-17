@@ -6,12 +6,14 @@ type Props = {
   image: string
 }
 
-export default function Card({ title ="Neck Hurts", text="Nacken schmrzen", image }: Props) {
+export default function Card({ title = 'Neck Hurts', text = 'Nacken schmrzen', image }: Props) {
+  const random = Math.random();
   return (
     <div className={styles.card}>
       <h2>{title}</h2>
-      <img src="{image}" alt="Hero" />
+      <img src={image + "?" + random} alt={title} />
       <p>{text}</p>
+      <p>{random}</p>
     </div>
   )
 }

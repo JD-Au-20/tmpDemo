@@ -1,9 +1,15 @@
-export default function Auti() {
+type AutiProps = {
+  name: string
+  image: string
+  description: string
+}
+
+export default function Auti({ name, image, description }: AutiProps) {
   return (
     <div className="card">
-      <h2>Mein Auto</h2>
-      <img src="https://picsum.photos/200/300" alt="Auto" />
-      <p>Made by hypercar owner</p>
+      <h2>{name}</h2>
+      <img src={image} alt={name} />
+      <p>{description}</p>
     </div>
   )
 }
