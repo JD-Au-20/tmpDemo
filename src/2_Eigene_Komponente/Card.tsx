@@ -7,13 +7,15 @@ type Props = {
 }
 
 export default function Card({ title = 'Neck Hurts', text = 'Nacken schmrzen', image }: Props) {
-  const random = Math.random();
+  const words = ['Apfel', 'Sonne', 'Wolke', 'Baum', 'Stern']
+  const randomWord = words[Math.floor(Math.random() * words.length)]
+
   return (
     <div className={styles.card}>
       <h2>{title}</h2>
-      <img src={image + "?" + random} alt={title} />
+      <img src={image} alt={title} />
       <p>{text}</p>
-      <p>{random}</p>
+      <p>{randomWord}</p>
     </div>
   )
 }
